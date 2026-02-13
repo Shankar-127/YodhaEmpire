@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#f6f6f6"/>
+  <rect x="70" y="70" width="1060" height="760" rx="16" fill="#fff" stroke="#d9d9d9" stroke-width="3"/>
+  <text x="130" y="165" font-family="Verdana, sans-serif" font-size="44" fill="#2d2d2d">ProgBooks Handwritten Notes - Page 6</text>
+  <path d="M130 240 L540 240 L540 700 L130 700 Z" fill="#f0fbff" stroke="#94d5e5"/>
+  <path d="M600 240 L1050 240 L1050 700 L600 700 Z" fill="#f8fff3" stroke="#a7de98"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#f7f7f7"/>
+  <rect x="70" y="70" width="1060" height="760" rx="14" fill="#fff" stroke="#d0d0d0" stroke-width="3"/>
+  <text x="130" y="170" font-family="Verdana, sans-serif" font-size="44" fill="#2d2d2d">ProgBooks Handwritten Notes - Page 4</text>
+  <line x1="130" y1="230" x2="1050" y2="230" stroke="#dddddd" stroke-width="3"/>
+  <line x1="130" y1="300" x2="930" y2="300" stroke="#dddddd" stroke-width="3"/>
+  <line x1="130" y1="370" x2="1020" y2="370" stroke="#dddddd" stroke-width="3"/>
+  <line x1="130" y1="440" x2="960" y2="440" stroke="#dddddd" stroke-width="3"/>
+  <line x1="130" y1="510" x2="980" y2="510" stroke="#dddddd" stroke-width="3"/>
+  <line x1="130" y1="580" x2="1040" y2="580" stroke="#dddddd" stroke-width="3"/>
+  <line x1="130" y1="650" x2="910" y2="650" stroke="#dddddd" stroke-width="3"/>
+</svg>
