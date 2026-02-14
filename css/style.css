@@ -329,6 +329,23 @@ h3 {
   font-size: 0.9rem;
 }
 
+.pdf-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.8rem;
+}
+
+.pdf-actions .download-btn {
+  margin-top: 0;
+}
+
+.pdf-mobile-hint {
+  margin: 0.35rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
 .no-pdf {
   padding: 1rem;
   border-radius: 10px;
@@ -522,6 +539,10 @@ h3 {
 
   .notes-grid {
     grid-template-columns: 1fr;
+  }
+
+  .pdf-viewer {
+    height: 62vh;
   }
 }
 

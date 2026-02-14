@@ -130,5 +130,57 @@ function setCurrentYear() {
   });
 }
 
+function setupPdfViewers() {
+  const pdfCards = document.querySelectorAll(".pdf-card");
+  if (!pdfCards.length) return;
+
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+  pdfCards.forEach((card) => {
+    const viewer = card.querySelector(".pdf-viewer");
+    if (!viewer) return;
+
+    const pdfPath = viewer.getAttribute("src");
+    if (!pdfPath) return;
+
+    let actions = card.querySelector(".pdf-actions");
+    const downloadBtn = card.querySelector(".download-btn");
+
+    if (!actions) {
+      actions = document.createElement("div");
+      actions.className = "pdf-actions";
+      card.appendChild(actions);
+    }
+
+    let openBtn = actions.querySelector(".pdf-open-btn");
+    if (!openBtn) {
+      openBtn = document.createElement("a");
+      openBtn.className = "download-btn pdf-open-btn";
+      openBtn.textContent = "Open PDF";
+      openBtn.target = "_blank";
+      openBtn.rel = "noopener";
+      actions.prepend(openBtn);
+    }
+    openBtn.href = pdfPath;
+
+    if (downloadBtn && downloadBtn.parentElement !== actions) {
+      actions.appendChild(downloadBtn);
+    }
+
+    let mobileHint = card.querySelector(".pdf-mobile-hint");
+    if (!mobileHint) {
+      mobileHint = document.createElement("p");
+      mobileHint.className = "pdf-mobile-hint";
+      mobileHint.textContent = "Preview works on most devices. If it does not load, tap Open PDF.";
+      actions.insertAdjacentElement("afterend", mobileHint);
+    }
+
+    viewer.style.display = "block";
+    mobileHint.hidden = !isMobile;
+  });
+}
+
 setCurrentYear();
+setupPdfViewers();
+window.addEventListener("resize", setupPdfViewers);
 
